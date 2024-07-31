@@ -51,5 +51,65 @@ console.log("Sum of Numbers:", sumOfNumbers);
 // 5. Use the forEach method to print each number in the array to the console
 console.log("All Numbers:");
 numbers.forEach(number => console.log(number));
+// main.js
+
+// 1. Create a function named greet that takes a name parameter and prints a greeting message to the console
+function greet(name) {
+    console.log(`Hello, ${name}! Welcome to JavaScript Basics.`);
+}
+
+// Example usage
+greet("Alice"); // Output: Hello, Alice! Welcome to JavaScript Basics.
+// 2. Create a function named sumArray that takes an array of numbers as a parameter and returns the sum of all elements
+function sumArray(numbers) {
+    return numbers.reduce((accumulator, currentValue) => accumulator + currentValue, 0);
+}
+
+// Example usage
+const numbersArray = [5, 8, 12, 20, 25, 30];
+const sum = sumArray(numbersArray);
+console.log("Sum of Array:", sum); // Output: Sum of Array: 100
+// 3. Create a function named findMax that takes an array of numbers as a parameter and returns the maximum number
+function findMax(numbers) {
+    if (numbers.length === 0) {
+        throw new Error("Array is empty");
+    }
+    return numbers.reduce((max, current) => (current > max ? current : max), numbers[0]);
+}
+
+// Example usage
+const maxNumber = findMax(numbersArray);
+console.log("Maximum Number:", maxNumber); // Output: Maximum Number: 30
+// main.js
+
+// 1. Create a function named greet that takes a name parameter and prints a greeting message to the console
+function greet(name) {
+    console.log(`Hello, ${name}! Welcome to JavaScript Basics.`);
+}
+
+// Example usage
+greet("Alice"); // Output: Hello, Alice! Welcome to JavaScript Basics.
+
+// 2. Create a function named sumArray that takes an array of numbers as a parameter and returns the sum of all elements
+function sumArray(numbers) {
+    return numbers.reduce((accumulator, currentValue) => accumulator + currentValue, 0);
+}
+
+// Example usage
+const numbersArray = [5, 8, 12, 20, 25, 30];
+const sum = sumArray(numbersArray);
+console.log("Sum of Array:", sum); // Output: Sum of Array: 100
+
+// 3. Create a function named findMax that takes an array of numbers as a parameter and returns the maximum number
+function findMax(numbers) {
+    if (numbers.length === 0) {
+        throw new Error("Array is empty");
+    }
+    return numbers.reduce((max, current) => (current > max ? current : max), numbers[0]);
+}
+
+// Example usage
+const maxNumber = findMax(numbersArray);
+console.log("Maximum Number:", maxNumber); // Output: Maximum Number: 30
 
 
